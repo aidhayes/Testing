@@ -1,0 +1,325 @@
+# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define pov = Character("[povname]")
+
+define m = Character("Mom")
+
+define anon = Character("???")
+
+define r = Character("Reyl")
+# The game starts here.
+
+
+# Scene 1 - Intro
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bg room
+    $ initname = ""
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    "Zarik's conquests in Solton and Nyqual made him a living legend in Thal. He quickly rose to the rank of General, and commanded the army of Pangual, his home province. Though Zarik's conquests didn't stop on the battlefield."
+    "In the year 143 of the Thalan calendar, Zarik ursurped Dyton as Emperor of Thal. His charisma had garnered him the support of the entire army, so his rise to power was met with little resistance. Indeed, even the Thalan people loved Emperor Zarik"
+    "This love, however, is now nothing more than a fleeting memory."
+
+
+label character_info:
+    python:
+        povname = renpy.input("What is your name?", length=32)
+        povname = povname.strip()
+    
+    menu:
+        "What is your gender?"
+
+        "Male":
+            $ povgender = "Male"
+        "Female":
+            $ povgender = "Female"
+        "Non-Binary":
+            $ povgender = "Non-Binary"
+        "Other":
+            $ povgender = "Other"
+
+    python:
+        if not povname:
+            if povgender == "Male":
+                povname = "Threcius"
+            elif povgender == "Female":
+                povname = "Patrella"
+            elif povgender == "Non-Binary":
+                povname = "Ledoucious"
+            else:
+                povname = "Othrecious"
+    menu:
+        "Your name is [povname], correct?"
+
+        "Yes":
+            if povname == initname:
+                "You said that wasn't your name... but whatever."
+                "Anyways... let's begin."
+            else:
+                "Splendid! Let's begin."
+
+        "No":
+            "My apologies..."
+            "Please re-enter your information."
+            $ initname = povname
+            jump character_info
+
+    "You wake up suddenly, immediately noticed you have a throbbing headache."
+    "No, this is not some foreshadowing to a secret power which lay dormant within you, you are hungover after drinking all night at the local bar."
+    "By yourself, of course."
+    pov "Hey!"
+    "Woah, woah, calm down, it's not because you don't have any friends, it's just that they couldn't make it."
+    "Anyway, you get out of bed and walk out of your room to see your mom cooking breakfast."
+
+    scene bg diningroom
+    show mom happy
+
+    # These display lines of dialogue.
+
+    m "Oh, you're finally awake, good morning sleepy head."
+    pov "Good morning mom."
+    show mom wondering
+    m "You were out late last night, special occassion?"
+    pov "No, nothing of the sort."
+    show mom grinning
+    m "Just needed to take the edge off?"
+    pov "Yeah."
+    show mom wave
+    m "Well eat up, I gotta head to work, I'll see you later."
+    pov "See ya mom."
+   
+    scene bg bedroom
+
+    "You head back to your room to get changed for work, however you notice a note on your window sill."
+    menu:
+        "Do you wish to read the note"
+
+        "Yes":
+            "You decide to read the note."
+        "No":
+            menu:
+                "Are you sure you don't want to read the note?"
+
+                "Yes, I'm sure.":
+                    menu:
+                        "But it's vital to the plot, you can't continue without it."
+
+                        "I'm not reading it!":
+                            "If this is your wish, then I must comply. To the journey that could have been, farewell [povname]..." 
+                            return
+                        "Fine, I'll read it!":
+                            "Wonderful! I knew you'd come around!"
+                "Actually, I changed my mind, I'll read it.":
+                    "You made a wise decision, [povname]!"
+    centered "Hello [povname], I've been keeping close tabs on you. I think I might have some valuable information you may be interested in. Meet me under the weeping willow at 9:30, you know the spot. Peace."
+    pov "What the fuck????"
+    pov "Am I being stalked?"
+    pov "Also, he signed off with peace like that makes it any better."
+    pov "I'm gonna go give this creep a piece of my mind."
+    "You decide to go to the weeping willow to confront your stalker."
+
+# Scene 2 - Meeting Reyl
+label willow:
+    scene bg willow
+    "You arrive at the weeping willow and are greeted with the sight of nobody at all."
+    pov "What's with this? This is the spot he told me to come to, so where the hell is he?"
+    anon "Yoohoo"
+    pov "Who said that?"
+    anon "Up here, man."
+    "You look up to see a man laying on a branch, reading a book."
+    pov "Oh..."
+    pov "Are you the one that wrote the letter?"
+    anon "I'm your guy."
+    pov "What the hell was that about? 'I've had my eye on you'? That's fucking creepy, man."
+    anon "Relax dude, it's not like that."
+    "The man jumps down from the branch."
+    show reyl
+    pov "Then what the hell is it like?"
+    show reyl explain
+    anon "Ugh... fine, yes, I've been watching you, but only for, like, five days maybe?"
+    pov "FIVE DAYS???"
+    anon "Yeah, I had to be sure you were the right guy."
+    pov "Right guy?"
+    anon "Yea, I'll have to explain, but the fact you knew what weeping willow means I was right!"
+    pov "Wait... what do you mean?"
+    anon "You found me here, I never told you which weeping willow it was."
+    pov "Oh... I guess I just found my way here instinctively."
+    show reyl grinning
+    anon "See, instincts man, you got em!"
+    pov "You think so... wait, no, who the hell are you?"
+    show reyl sorry
+    anon "Oops, my bad, I guess I never introduced myself ♥"
+    show reyl introduce
+    r "The name's Reyl, it's a pleasure to finally meet you."
+    pov "Finally?"
+    show reyl explain
+    r "I've heard so much about you from your uncle."
+    show reyl
+    pov "You know my uncle?"
+    show reyl explain
+    r "Yeah me and Teach go way back. Hes taught me everything I've ever known."
+    show reyl
+    pov "Really?"
+    show reyl explain
+    r "Oh fuck yea, he's helped me a lot through the years, well anyway, he wanted me to find you."
+    show reyl
+    pov "What for? Will I get to see him, I haven't seen him in ages."
+    show reyl sorry
+    r "About that..."
+    show reyl serious
+    r "He was made prisoner by the Emperor."
+    pov "What the hell does the Emperor want with my uncle?"
+    show reyl sorry
+    r "About that also..."
+    show reyl serious
+    r "The Emperor is your uncle's brother... and well you can put two and two together..."
+    pov "Wait..."
+    show reyl tilt
+    r "Hm?"
+    pov "My dad is the Emperor???"
+    show reyl yup
+    r "Mhm."
+    pov "There's no fucking way..."
+    show reyl handing
+    r "Well, I figured you'd say that, and so did your uncle, take this."
+    "Reyl hands you a note written in your uncle's handwriting."
+    scene bg letter
+    centered "[povname], I'm sorry for not telling you sooner, perhaps it wouldn't have turned out like this. What Reyl tells you is true, your father is Emperor Zarik. He left your mother before he ever knew she was pregnant. In between the time he left and you were born, he became Emperor. I was still in contact with your mother, and after seeing what horrible things he was doing, I had her flee to an isolated location. He only just recently somehow found out he had a son. If you are reading this now, it means your father has imprisoned me. I assume he plans to torture me to find out where you are. I do not plan on telling them, but please, take your mother and run. As far away as possible. I'm sorry [povname], I've always loved you as a son, if only we were dealt a better fate."
+    scene bg willow
+    show reyl waiting
+    "You drop to your knees."
+    show reyl instructing
+    r "Welp, you heard... no read... the man. Go get your mom and run."
+    pov "I can't..."
+    show reyl angry
+    r "Don't be such a fucking pussy man, I mean, how are you gonna be such a pussy you can't even do the pussiest thing a man could do when faced with hardship?"
+    pov "No..."
+    show reyl confused
+    r "Hm?"
+    pov "I can't leave him behind..."
+    r "Who? A friend?"
+    pov "No dipshit."
+    "You rise to your feet."
+    show reyl shocked
+    pov "Theres no way in hell I'm gonna run away and leave my uncle behind."
+    show reyl confused
+    r "Oh?"
+    r "Well this is most unexpected..."
+    show reyl grinning
+    r "But not really though ♥. I was expecting this outcome all along."
+    pov "But..."
+    show reyl explain
+    r "Hey man, that letter is just what your uncle wants you to do. I knew any sensible man wouldn't leave his family behind."
+    show reyl grinning
+    r "Well, some of the stuff I've seen you do isn't so sensible. Going telegram club to talk to women... pathetic."
+    pov "How the hell did you know that?"
+    show reyl mischievous
+    r "I've kept my eye on you, remember?"
+    pov "Right... creep."
+    show reyl
+    r "We can settle that later, right now we need to get your mom to a safe location."
+    pov "Right... just because I'm not running doesn't mean she has to stay with me."
+    show reyl hurry
+    r "Exactly, let's go!" 
+
+label mom_work:
+    scene bg diner
+    "You arrive at your mom's work and bust through the door."
+    pov "MOM!"
+    "There are some murmers among the patrons."
+    "Your mom, who just finished serving a table, walks over to you."
+    show mom confused
+    m "What is it sweety?"
+    pov "You gotta get out of here... the Emperor, no, dad, has imprisoned Uncle Ethryl."
+    show mom wonder
+    m "Is that so..."
+    pov "Is that all you have to say? He's gonna come for you next probably."
+    show mom explain
+    m "Ethryl and me knew this day was coming sooner or later. Sorry if I don't seem very surprised."
+    pov "So if youn know already, get as far away as possible. Please mom... I can't lose you."
+    show mom disagree
+    m "Oh sweety... I'm sorry, I can't do that."
+    pov "Why the hell not? Are you just gonna give up and let him take you?"
+    show mom explain
+    m "No, not at all."
+    pov "Then???"
+    m "Well... you're probably gonna go and try to save him right?"
+    pov "Yeah..."
+    show mom thinking
+    m "Well, I know you... You're too, how do I say this nicely..."
+    show mom grinning
+    m "Weak?"
+    pov "..."
+    show mom laugh
+    m "So I can't just let you go by yourself."
+    pov "But I have Reyl! I'll be fine!"
+    show reyl at left with moveinleft
+    show mom confused at right with move
+    r "Yo!"
+    m "Who's this sweety?"
+    r "The name's Reyl, pleasure to finally meet you. I've heard so much about you from Ethryl, and I must say, you look ever better in person."
+    show mom blush
+    m "Oh... why thank you"
+    pov "HEY!!"
+    r "Oh, sorry... Yeah I know this kid's uncle. He took me in a while back."
+    m "You trust him, [povname]?"
+    pov "I don't even know to be honest with you... I can't explain it, but part of me knows what Reyl says is true."
+    show reyl happy
+    r "I told you ya had instincts ♥"
+    show mom thinking
+    m "I see..."
+    show mom confident
+    m "Then I will trust him as well, well I've actually heard about him from Ethryl a few times..."
+    pov "Really???"
+    show mom
+    m "I've never met the man though."
+    show reyl grinning
+    r "It's true, I would've known if I met a beauty like you before."
+    show mom blush
+    m "Oh stop it."
+    pov "Thats my mom, man..."
+    show reyl sorry
+    r "Oh, right, sorry..."
+    show reyl thinking
+    r "Anyway... what were you planning on doing then?"
+    show mom confident
+    m "Well, joining you guys of course!"
+    show reyl shocked
+    pov "WHAT?"
+    show mom explain
+    m "Oh I guess I never told you, but I met your father in the army..."
+    show mom proud
+    m "I'm quite the skilled fighter if I do say so myself."
+    show reyl hearts
+    pov "You've kept a lot from me..."
+    show mom sorry
+    m "Sorry ♥"
+    pov "Forget it..."
+    show mom grinning
+    show reyl thinking
+    r "Well, we have a merry band of three then... we just need to figure out where your uncle is being held."
+    show manager
+    show mom surprised
+    show reyl surprised
+    "Manager" "Do you people mind? You are disrupting my business. Also, Sherthy get back to work."
+    show mom sorry
+    m "Oh, sorry Borj... I think I'm gonna need some time off though."
+    "Manager" "I won't allow it, get back out there and--"
+    show mom wave
+    m "Goodbye Borj ♥"
+    "The three of you head back to your house to gather some supplies."
+    
+
+
+
+

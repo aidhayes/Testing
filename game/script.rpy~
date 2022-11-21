@@ -1,0 +1,162 @@
+﻿# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define pov = Character("[povname]")
+
+define m = Character("Makima")
+
+define anon = Character("???")
+
+define r = Character("Reyl")
+# The game starts here.
+
+
+# Scene 1 - Intro
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bg room
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    "Zarik's conquests in Solton and Nyqual made him a living legend in Thal. He quickly rose to the rank of General, and commanded the army of Pangual, his home province. Though Zarik's conquests didn't stop on the battlefield."
+    "In the year 143 of the Thalan calendar, Zarik ursurped Dyton as Emperor of Thal. His charisma had garnered him the support of the entire army, so his rise to power was met with little resistance. Indeed, even the Thalan people loved Emperor Zarik"
+    "This love, however, is now nothing more than a fleeting memory."
+
+    python:
+        povname = renpy.input("What is your name?", length=32)
+        povname = povname.strip()
+
+        if not povname:
+            povname = "Thresus"
+
+    "You wake up suddenly, immediately noticed you have a throbbing headache."
+    "No, this is not some foreshadowing to a secret power which lay dormant within you, you are hungover after drinking all night at the local bar."
+    "By yourself, of course."
+    pov "Hey!"
+    "Woah, woah, calm down, it's not because you don't have any friends, it's just that they couldn't make it."
+    "Anyway, you get out of bed and walk out of your room to see your mom cooking breakfast.."
+
+    show makima happy
+
+    # These display lines of dialogue.
+
+    m "Oh, you're finally awake, good morning sleepy head."
+    pov "Good morning mom."
+    m "You were out late last night, special occassion?"
+    pov "No, nothing of the sort."
+    m "Just needed to take the edge off?"
+    pov "Yeah."
+    m "Well eat up, I gotta head to work, I'll see you later."
+    pov "See ya mom."
+    hide makima
+
+    "You head back to your room to get changed for work, however you notice a note on your window sill."
+    menu:
+        "Do you wish to read the note"
+
+        "Yes":
+            "You decide to read the note."
+        "No":
+            menu:
+                "Are you sure you don't want to read the note?"
+
+                "Yes, I'm sure.":
+                    menu:
+                        "But it's vital to the plot, you can't continue without it."
+
+                        "I'm not reading it!":
+                            "If this is your wish, then I must comply. To the journey that could have been, farewell [povname]..." 
+                            return
+                        "Fine, I'll read it!":
+                            "Wonderful! I knew you'd come around!"
+                "Actually, I changed my mind, I'll read it.":
+                    "You made a wise decision, [povname]!"
+    centered "Hello [povname], I've been keeping close tabs on you. I think I might have some valuable information you may be interested in. Meet me under the weeping willow at 9:30, you know the spot. Peace."
+    pov "What the fuck????"
+    pov "Am I being stalked?"
+    pov "Also, he signed off with peace like that makes it any better."
+    pov "I'm gonna go give this creep a piece of my mind."
+    "You decide to go to the weeping willow to confront your stalker."
+
+# Scene 2 - Meeting Reyl
+label willow:
+    "You arrive at the weeping willow and are greeted with the sight og nobody at all."
+    pov "What's with this? This is the spot he told me to come to, so where the hell is he?"
+    anon "Yoohoo"
+    pov "Who said that?"
+    anon "Up here, man."
+    "You look up to see a man laying on a branch, reading a book."
+    pov "Oh..."
+    pov "Are you the one that wrote the letter?"
+    anon "I'm your guy."
+    pov "What the hell was that about? 'I've had my eye on you'? That's fucking creepy, man."
+    anon "Relax dude, it's not like that."
+    pov "Then what the hell is it like?"
+    anon "Ugh... fine, yes, I've been watching you, but only for, like, five days maybe?"
+    pov "FIVE DAYS???"
+    anon "Yeah, I had to be sure you were the right guy."
+    pov "Right guy?"
+    anon "Yea, I'll have to explain later, but the fact you knew what weeping willow means I was right!"
+    pov "Wait... what do you mean?"
+    anon "You found me here, I never told you which weeping willow it was."
+    pov "Oh... I guess I just found my way here instinctively."
+    anon "See, instincts man, you got em!"
+    pov "You think so... wait, no, who the hell are you?"
+    anon "Oops, my bad, I guess I never introduced myself ♥"
+    r "The name's Reyl, it's a pleasure to finally meet you."
+    pov "Finally?"
+    r "I've heard so much about you from your uncle."
+    pov "You know my uncle?"
+    r "Yeah me and Teach go way back. Hes taught me everything I've ever known."
+    pov "Really?"
+    r "Oh fuck yea, he's helped me a lot through the years, well anyway, he wanted me to find you."
+    pov "What for? Will I get to see him, I haven't seen him in ages."
+    r "About that..."
+    r "He was made prisoner by the Emperor."
+    pov "What the hell does the Emperor want with my uncle?"
+    r "About that also..."
+    r "The Emperor is your uncle's brother... and well you can put two and two together..."
+    pov "Wait..."
+    r "Hm?"
+    pov "My dad is the Emperor???"
+    r "Mhm."
+    pov "There's no fucking way..."
+    r "Well, I figured you'd say that, and so did your uncle, take this."
+    "Reyl hands you a note written in your uncle's handwriting."
+    centered "[povname], I'm sorry for not telling you sooner, perhaps it wouldn't have turned out like this. What Reyl tells you is true, your father is Emperor Zarik. He left your mother before he ever knew she was pregnant, in between the time he left and you were born, he became Emperor. I was still in contact with your mother, and after seeing what horrible things he was doing, I had her flee to an isolated location. He only just recently somehow found out he had a son. If you are reading this now, it means your father has imprisoned me, I assume he plans to torture me to find out where you are. I do not plan on telling them, but please, take your mother and run. As far away as possible. I'm sorry [povname], I've always loved you as a son, if only we were dealt a better fate."
+    "You drop to your knees and a wave of emotions hits you."
+    r "Welp, you heard... no read... the man. Go get your mom and run."
+    pov "I can't..."
+    r "Don't be such a fucking pussy man, I mean, how are you gonna be such a pussy you can't even do the pussiest thing a man could do when faced with hardship?"
+    pov "No..."
+    r "Hm?"
+    pov "I can't leave him behind..."
+    r "Who? A friend?"
+    pov "No dipshit."
+    "You rise to your feet."
+    pov "Theres no way in hell I'm gonna run away and leave my uncle behind."
+    r "Oh?"
+    r "Well this is most unexpected..."
+    r "But not really though ♥. I was expecting this outcome all along."
+    pov "But..."
+    r "Hey man, that letter is just what your uncle wants you to do. I knew any sensible man wouldn't leave his family behind."
+    r "Well, some of the stuff I've seen you do isn't so sensible. Going telegram club to talk to women... pathetic."
+    pov "How the hell did you know that?"
+    r "I've kept my eye on you, remember?"
+    pov "Right... creep."
+    r "We can settle that later, right now we need to get your mom to a safe location."
+    pov "Right... just because I'm not running doesn't mean she has to stay with me."
+    r "Exactly, let's go!" 
+
+
+
+
+
