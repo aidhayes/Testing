@@ -3,3 +3,14 @@
 /errors.txt
 /log.txt
 /traceback.txt
+/.AppleDouble 
+/.LSOverride
+
+*.rpyc
+*.rpymc
+game/cache/
+game/saves/
+log.txt
+traceback.txt
+errors.txt
+
