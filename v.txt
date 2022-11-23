@@ -1,0 +1,51 @@
+v “…”
+    v “Your mother… she’d do anything for you, huh?”
+    pov “Oh, it goes without saying.”
+    pov “(I mean, she jumped to go on this adventure with me. She could be working right now, avoiding marauders and political conspiracy.)”
+    pov “(But she chose to be with me. And I’m going to protect her. 
+    pov “(Not that she needs it… but it’s the thought that counts.)”
+    v “Mm. And I bet you’d do anything for her?”
+    pov “Is that even a question?”
+    v “…Hm.”
+    v “Do you remember when we were little, and we’d run through town playing tag without concern over whether we bumped into anyone or not?”
+    pov “You were so shy back then! That’s why you loved hide-and-seek.”
+    “Valoria is familiar to you. The friendship you two shared, in your youth, was naive bliss. Everything was surface level. But surfaces reshape themselves as the insides are gutted, built, then gutted again. Your familiarity ended a while ago.”
+    “But, there’s time to rebuild that.”
+    v “Besides our moments together, [povname], I was alone for most of my childhood. I’ve been alone for most of my life. The one constant I have is my mother.”
+    v “Maybe you saw her around from time to time. She worked as a tailor. But really, she was an artist. She could sew clothes that just… embodied the aura of the wearer. It’s like she gazed into your soul when she worked.”
+    pov “Did she work at… Fabled Threads?”
+    v “Yes. It closed a while ago, back when we were kids.”
+    pov “I remember. My mom took me there to get my formalwear tailored.”
+    “You can’t make out her expression. It’s clouded in the shadow of memory.”
+    v “She’s ill.”
+    pov “Valoria… I’m so sorry. I didn’t know.”
+    v “I don’t see her too often. She’s secluded on a mountain with my sister. She’s taken care of. You can dip your fingers in the sunset, it’s that close to the sky.”
+    v “It’s what she needs, during her final hours.”
+    pov “You don’t know that she’s going to die!”
+    v “I can pretend it’s fine. That we’ll have a happy ending. But deep within myself, I know the truth. I’m running from the inevitable.”
+    v “I could be the one staying with her 24/7 taking care of her. But staring at her in bed, all I see is a casket waiting to be lowered. Call me a coward. I accepted it a long time ago.”
+    v “I have to bring food to the table. I have to make money to afford her medical expenses. But, when the world spits in your eye and tells you to grovel, you spit right back.”
+    v “I wouldn’t steal if I didn’t have to. I don’t want to. But bandithood is easier than applying for job after job only to be met with rejection.”
+    v “Stuff like this can really, really remind you how alone you truly are. How no one else can help you.”
+    v “It brought me back to when I was a  kid, and I didn’t have a care in the world. I didn’t know that illness affects everyone, that death is permanent…”
+    “Her words draw towards a dead end. The room is silent. You don’t know how to handle the concept of death yourself, but you know (vaguely) how to handle people.”
+    pov “Valoria… I wish I had known sooner. No one deserves to go through those hardships.”
+    pov “Your mother is a fighter. But so are you. I don’t know what you’re going through, I won’t pretend to. Just know that with every chip at the shell, light comes shining through.”
+    pov “There’s still hope.”
+    pov “Physically, someone is dead forever, sure. But through you and your legacy… I think your mom could live forever.”
+    “When she stares at you—no, into you, the air stills. One breath, and the space between you would shatter like glass.”
+    “She brings a hand to her mouth, almost like she’s stifling a choke. Or a laugh. You can’t really tell what she’s feeling. There’s a smile forming at the corner of her lips. But not all smiles are born from joy.”
+    “Valoria steps closer.”
+    “She reaches an arm out to you…”
+    v “Tag.”
+    pov “Huh?”
+    v “You’re it.”
+    pov “HUH????”
+    “Before you can process what she just said, Valoria darts off. You wildly look around the room for her.”
+    pov “What’s with all this?!”
+    v “What you said… it reminded me of something from my childhood.”
+    v “How you always played with me when I was sad. No matter what, you wanted to play.”
+    v “‘Forget about it right now!’ you’d say to me.”
+    v “And it worked then, so… why not try it right now?”
+    “Finally, you can see the smile formed on her face. Sure as day, you can tell it is born out of happiness.”
+    “You guys play tag until the sunrise pours into the flimsy dark of the night.”
