@@ -1,0 +1,48 @@
+
+
+# he should have low atk and def but higher hp because healer 
+# i did "ja" because "j" might be used for python and i don't wanna fuck up the code LOL
+
+# — em dash
+
+m "Good morning, honey! You're up earlier than usual."
+pov "Morning, mom."
+pov "This whole journey's messed with my internal clock."
+pov "Hey, where's Reyl?"
+m "I told him I wanted to make wildberry pie, so he went to go foraging. Apparently he's a real woodsman!"
+m "Isn't he so sweet? ♥"
+pov "(It's too early for this...)"
+m "He has been gone a while, though. Hopefully he comes back soon."
+r "YEEEEEEEEEEOWCH!"
+pov "Sounds like he's back!"
+"Reyl tears through the bushes. The way he's hopping around, it looks like he's dancing. You snort back a laugh until you notice him pulling at his pants."
+m "Reyl, are you—AH!!!"
+"Your mom rears back in shock. Probably because Reyl's stripping in front of the both of you. He's yanking at some ribbon wrapped around his ankle."
+"Wait... that's no ribbon. Ribbons don't have eyes..."
+"It's... a SNAKE! A snake had torn through Reyl's pants and sunk its teeth into his ankle!"
+r "Can you all stAAAAAOWCH!!! STOP staring and owowowowowow geddit OFF ME?!"
+"Out of her tent comes Valoria, clearly startled by the commotion."
+v "
+"You and your mother dragged a limp Reyl on a dirt road for what felt like hours. You didn't think it would be this hard. He was just so compact with muscles and stupidity."
+"Half the time, Reyl would mumble incoherently. You didn't know shit about medical assistance, and your mother only knew what a first aid kit provided. For all you two knew, the poison could be destroying his brain."
+pov "(I really, REALLY hope we can find someone soon.)"
+pov "(But this road looks barely touched... there's a few wheel tracks but who knows the last time anyone was here?)"
+"It all seemed hopeless."
+"{i}HOOOOOOONK!!!!!{/i}"
+m "What's that up ahead? I think it's driving towards us!"
+"{i}HONK HONK HOOOOOONK!!!!!{/i}"
+"Okay, maybe it's not quite as hopeless."
+pov "Hey! Over here!!"
+"Smoke and dust fill the air as the mysterious vehicle slows next to your party. It's an amalgamation of steel and wood held together haphazardly by nails. Any other day, you would've called it a hunk of junk and walked away. But right now... it's your only hope."
+"The door opens, and you catch a glimpse of the inside coated in maroon velvets and scaly leathers. The gilded ferrule of a cane hits the dirt. Out emerges the driver, dressed to match his vehicle's interior. His face was masked by the shadow cast under the brim of a leather hat, decorated with an antler. Everything about him is long: long overcoat, long bolo tie, long eyelashes, long hair draping his shoulders and running down his back. He stood up straight and he towered above the entire party!"
+"A gentleman driving a piece of scrap... ha! What an interesting sight!"
+anon "Pardon my stopping so close to y'all, but I couldn't help but notice that fella in your arms."
+anon "You alright, son?"
+r "Dooooooh, I've never seen a mantis as big as you!"
+m "He's in terrible condition, mister! He got bit by a snake!"
+anon "By golly, a snake! With a quick-acting venom, looks like."
+anon "You folks are in luck, 'cause I've got just the thing."
+"He takes your hand into his own and presses it to his lips. Suddenly {i}you're{/i} the one feeling feverish..."
+ja "My name is Jackal L. R. Ruse, travelin' gentleman doctor..."
+"He takes your mother's hand and kisses it just the same. Her face burns with a crimson blush."\
+ja "...and friend to all."
