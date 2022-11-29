@@ -1,5 +1,6 @@
 BATTLE SYSTEM
-STATS
+
+- STATS
     HP
     ATK
     DEF
@@ -7,12 +8,17 @@ STATS
     CRIT %
     CRIT ATK
     
-TYPING
-LEVELING
+- TYPING
+    - MILF
+    - NORMAL
+    - MILK
+    - BULGE
+    
+- LEVELING
 MC: 
     Level up stats through leveling up relationship levels with party members
     Party Member Buffs:
         - Mom: HP
         - Reyl: ATK
         - Jacal: DEF
-        -
+        - 
