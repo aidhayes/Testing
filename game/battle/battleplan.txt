@@ -1,0 +1,18 @@
+BATTLE SYSTEM
+STATS
+    HP
+    ATK
+    DEF
+    EVA
+    CRIT %
+    CRIT ATK
+    
+TYPING
+LEVELING
+MC: 
+    Level up stats through leveling up relationship levels with party members
+    Party Member Buffs:
+        - Mom: HP
+        - Reyl: ATK
+        - Jacal: DEF
+        -
