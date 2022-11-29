@@ -7,14 +7,35 @@ BATTLE SYSTEM
     EVA
     CRIT %
     CRIT ATK
-    
-- TYPING
-    - MILF
-    - NORMAL
-    - MILK
-    - BULGE
 
-- LEVELING
+- STATUS EFFECTS
+    - POISON
+        - WEAK: 5% PER TURN FOR 5 TURNS
+        - STRONG: 10% PER TURN UNTIL CLEANSED
+    - FREEZE:
+        - UNABLE TO MOVE FOR UP TO 5 TURNS 
+            - 1 TURN: 100%
+            - 2 TURNS: 90%
+            - 3 TURNS: 75%
+            - 4 TURNS: 50%
+            - 5 TURNS: 25%
+        - 2% PER TURN WHILE FROZEN
+    - BURN:
+        - FIRST DEGREE: 2% PER TURN FOR 3 TURNS
+        - SECOND DEGREE: 5% PER TURN FOR 5 TURNS
+        - THIRD DEGREE: 10% PER TURN UNTIL CLEANSED
+    - STUN:
+        - UNABLE TO MOVE FOR UP TO 5 TURNS 
+            - 1 TURN: 100%
+            - 2 TURNS: 90%
+            - 3 TURNS: 75%
+            - 4 TURNS: 50%
+            - 5 TURNS: 25%
+    - SUICIDE:
+        - YOU MAY KILL YOURSELF
+    - POST NUT CLARITY
+        - +10% ACCURACY FOR NEXT TURN
+
 MC: 
     Level up stats through leveling up relationship levels with party members
     Party Member Buffs:
