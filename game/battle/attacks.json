@@ -1,0 +1,11 @@
+{
+  "Anal Leakage":
+  {
+    "Base Power": 80,
+    "Accuracy": 100,
+    "Status": "poison",
+    "Bonus Chance": 10
+  },
+
+  "Fistula Blast": {}
+}
