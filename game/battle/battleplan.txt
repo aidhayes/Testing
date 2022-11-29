@@ -13,12 +13,12 @@ BATTLE SYSTEM
     - NORMAL
     - MILK
     - BULGE
-    
+
 - LEVELING
 MC: 
     Level up stats through leveling up relationship levels with party members
     Party Member Buffs:
         - Mom: HP
         - Reyl: ATK
-        - Jacal: DEF
+        - Jackal: DEF
         - 
