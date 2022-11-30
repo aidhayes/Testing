@@ -21,3 +21,4 @@ Welcome to the repository for [VISUAL NOVEL TO BE NAMED LATER]. This game is in 
 - Josh G.
 ### Character Design
 - J.P. M. (I hope)
+- Hannah L.
