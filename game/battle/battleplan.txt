@@ -7,7 +7,6 @@ BATTLE SYSTEM
     EVA
     CRIT %
     CRIT ATK
-
 - STATUS EFFECTS
     - POISON
         - WEAK: 5% PER TURN FOR 5 TURNS
@@ -35,11 +34,74 @@ BATTLE SYSTEM
         - YOU MAY KILL YOURSELF
     - POST NUT CLARITY
         - +10% ACCURACY FOR NEXT TURN
+- LEVELING:
+    - IMPROVE STATS BY LEVELING UP RELATIONSHIP WITH PARTY MEMBERS 
+    - PARTY MEMBER BUFFS:
+        - MOM: HP
+        - REYL: ATK
+        - VALORIA: DEF
+        - JACKAL: CRIT RATE
+        - PETRECIA: CRIT %
+- PARTY MEMBERS:
+    - MC:
+        - WEAPON: FISTS
+        - BASE STATS:
+            - HP: 100
+            - ATK: 50
+            - DEF: 25
+            - EVA: 25
+            - CRIT RATE: 5%
+            - CRIT %: 1.5
+        - ABILITIES:
+            -
+    - MOM:
+        - WEAPON: STAFF
+        - BASE STATS:
+            - HP:
+            - ATK:
+            - DEF:
+            - EVA:
+            - CRIT RATE:
+            - CRIT %:
+        - ABILITIES:
+            -
+    - REYL:
+        - WEAPON: SWORD
+        - BASE STATS:
+            - HP:
+            - ATK:
+            - DEF:
+            - EVA:
+            - CRIT RATE:
+            - CRIT %:
+        - ABILITIES:
+            -
+    - VALORIA:
+        - WEAPON: STAFF
+        - BASE STATS:
+            - HP:
+            - ATK:
+            - DEF:
+            - EVA:
+            - CRIT RATE:
+            - CRIT %:
+        - ABILITIES:
+            -
+    - JACKAL:
+        - WEAPON: REVOLVER
+        - BASE STATS:
+            - HP:
+            - ATK:
+            - DEF:
+            - EVA:
+            - CRIT RATE:
+            - CRIT %:
+        - ABILITIES:
+            - FIVE O' CLOCK SHADOW
+                - + 10% CRIT RATE FOR THE NEXT 5 TURNS FOR ALL PARTY MEMBERS
+                - 3 USES
 
-MC: 
-    Level up stats through leveling up relationship levels with party members
-    Party Member Buffs:
-        - Mom: HP
-        - Reyl: ATK
-        - Jackal: DEF
-        - 
+        
+
+    
+    
