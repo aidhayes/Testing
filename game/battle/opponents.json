@@ -1,0 +1,8 @@
+{
+  "Ressa":
+  {
+    "type": "dark",
+    "stats": [1300, 200, 250, 7, 3, 2.2],
+    "attacks": ["Embezzle", "Gummy Worm Strike", "Call to the Office", "Ressa Gargantua"]
+  }
+}
