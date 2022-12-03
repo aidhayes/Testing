@@ -47,6 +47,7 @@ label valoria_backstory:
 
         "No":
             v "Really?"
+            $ valoria.relationship_up(2)
             pov "It's your choice how you want to remember your mom... still, I know it probably pains your that you aren't there with her."
             v "It does..."
             show valoria sad
@@ -66,6 +67,7 @@ label valoria_backstory:
         hide valoria
         "Valoria sprints away from you, you stumble as you get up but manage to stay on your feet and start chasing her."
         "The two of you play tag in the darkness until you're greeted by the morning sun."
+        $ valoria.relationship_up(5)
         jump forest_morning
 
 
