@@ -4,3 +4,4 @@ class Battle_Handler:
         self.ai_char = ai_char
 
     def run(self):
+        pass
