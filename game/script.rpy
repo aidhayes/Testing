@@ -1,6 +1,7 @@
-﻿init python:
-    reyl = NPC("Reyl", {"hp": 150, "atk": 100, "def": 100}, True, "atk", [5, 15, 25, 50, 75])       
-    mom = NPC("Mom", {"hp": 100, "atk": 175, "def": 150}, False, "hp", [15, 25, 50, 75, 100])
+﻿
+default reyl = NPC("Reyl", {"hp": 150, "atk": 100, "def": 100}, True, "atk", [5, 15, 25, 50, 75])       
+default mom = NPC("Mom", {"hp": 100, "atk": 155, "def": 110}, False, "hp", [15, 25, 50, 75, 100])
+default valoria = NPC("Valoria", {"hp": 85, "atk"=150, "def"=150}, True, "def", [5, 15, 25, 50, 75])
 
 
 
